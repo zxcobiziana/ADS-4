@@ -13,13 +13,13 @@ public class Main {
 
         Graph medium = new Graph();
         for (int i = 1; i <= 30; i++) medium.addVertex(new Vertex(i));
-        for (int i = 1; i < 30; i++) medium.addEdge(i, i + 1); // simple chain
+        for (int i = 1; i < 30; i++) medium.addEdge(i, i + 1);
         System.out.println("Medium Graph(30 articles");
         exp.runTraversals(medium, 1);
 
         Graph large = new Graph();
         for (int i = 1; i <= 100; i++) large.addVertex(new Vertex(i));
-        for (int i = 1; i < 100; i++) large.addEdge(i, i + 1); // simple chain
+        for (int i = 1; i < 100; i++) large.addEdge(i, i + 1);
         System.out.println("Large Graph(100 vertices)");
         exp.runTraversals(large, 1);
     }
